@@ -7,7 +7,7 @@
 * Have Docker installed
 * Angular CLI: 6+
 * Node: 8+
-* Configure variables file .env
+* Configure /server variables file .env
 
 ##### Variables
 
@@ -32,6 +32,10 @@
 3. docker-compose up
 ```
 
+
+> Can test api url 
+> http://localhost:3000/api/post
+
 #### Run web page
 ```
 1. cd angularApp
@@ -46,7 +50,7 @@
 * Angular CLI: 6+
 * Node: 8+
 * Have gulp cli installed
-* Configure variables file .env
+* Configure /server variables file .env
 
 ##### Variables
 
@@ -65,6 +69,8 @@
   Posts request interval in millisecs
   
   #### Run server
+  > Must have a running mongodb instance
+  
   Run following commands on terminal
   ```
   1. cd server
@@ -80,4 +86,4 @@
   ```
   
 #### Important
-  if node(server) port is changed, go to angularApp/src/app/app.services.ts and change line 26 with new port
+>  if node(server) port is changed, go to angularApp/src/app/app.services.ts and change line 26 with new port
