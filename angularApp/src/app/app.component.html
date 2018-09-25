@@ -1,0 +1,31 @@
+<div class="grid-container">
+
+  <header class="header-container">
+    <div class="header-section">
+      <h1 class="title">HN Feed</h1>
+      <p class="subtitle">We <3 hacker news!</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <mat-nav-list>
+      <ng-container *ngFor="let post of posts">
+        <mat-list-item *ngIf="showPost(post)">
+          <a matLine href="{{ getUrl(post) }}" target="_blank">
+            <div class="section sec1">
+              <span>{{ getTitle(post) }}</span>
+              <span class="author"> - {{ post.author }} - </span>
+            </div>
+            <div class="section sec2">
+              <span>{{ post.created_at | date }}</span>
+            </div>
+          </a>
+          <button mat-icon-button class="delete" (click)="deletePost(post)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-list-item>
+      </ng-container>
+    </mat-nav-list>
+  </div>
+
+</div>

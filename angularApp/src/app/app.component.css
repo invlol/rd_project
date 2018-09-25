@@ -1,0 +1,58 @@
+.grid-container {
+  width: 100%;
+}
+
+.header-container {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.header-section {
+  padding: 50px 30px;
+}
+
+.header-section .title {
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+.header-section .subtitle {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.content {
+  padding: 10px 20px;
+}
+
+.mat-nav-list .mat-list-item {
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-size: 13px;
+}
+
+.mat-nav-list .mat-list-item:hover {
+  background-color: #fafafa;
+}
+
+.mat-nav-list .mat-list-item .section {
+  float: left;
+}
+
+.mat-nav-list .mat-list-item .sec2 {
+  float: right;
+  margin-right: 40px;
+}
+
+.mat-nav-list .mat-list-item .author {
+  color: #999;
+}
+
+.mat-nav-list .mat-list-item .delete {
+  visibility: hidden;
+}
+
+.mat-nav-list .mat-list-item:hover .delete {
+  visibility: visible;
+}
