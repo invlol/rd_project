@@ -22,6 +22,7 @@ jobs:
       - run:
           command: |
             cd angularApp
+            ls -la
 
       # Download and cache dependencies
       - restore_cache:
